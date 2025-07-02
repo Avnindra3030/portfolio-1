@@ -1,0 +1,28 @@
+function About() {
+  return (
+    <section className="about">
+      <h2 className="about-title">About Me</h2>
+      <p className="about-bio">
+        I am Avnindra Kumar Singh, a highly motivated Computer Science undergraduate with strong expertise in Data Structures & Algorithms, Web Development (MERN Stack), and scalable system design. I am passionate about solving real-world problems and building efficient software solutions. I am seeking challenging software engineering roles where I can contribute to impactful projects and continuously grow in a fast-paced environment.
+      </p>
+      <div className="about-education">
+        <h3 className="about-subtitle">Education</h3>
+        <ul>
+          <li><strong>B.Tech in Computer Science</strong>, Dronacharya College of Engineering, Gurugram (2022 – 2026)</li>
+          <li><strong>Intermediate (CBSE)</strong>, Jesus & Mary School, Lucknow (2019 – 2021) – 79%</li>
+          <li><strong>High School</strong>, Jesus & Mary School, Lucknow (2018 – 2019) – 80%</li>
+        </ul>
+      </div>
+      <div className="about-interests">
+        <h3 className="about-subtitle">Interests</h3>
+        <ul>
+          <li>Software engineering, scalable systems, and real-world problem solving</li>
+          <li>Cricket (represented Uttar Pradesh U-16 Cricket Team)</li>
+          <li>Shooting (district-level competitions)</li>
+        </ul>
+      </div>
+    </section>
+  );
+}
+
+export default About; 
