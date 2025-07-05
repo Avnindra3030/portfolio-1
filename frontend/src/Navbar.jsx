@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import ThemeToggle from './ThemeToggle';
 
 const navLinks = [
   { name: 'Home', href: '#home' },
@@ -25,6 +26,9 @@ function Navbar() {
               <a href={link.href} className="navbar-link" onClick={() => setOpen(false)}>{link.name}</a>
             </li>
           ))}
+          <li>
+            <ThemeToggle />
+          </li>
         </ul>
       </div>
     </nav>

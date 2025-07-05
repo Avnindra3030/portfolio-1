@@ -6,6 +6,12 @@ body {
   margin: 0;
   padding: 0;
   color: #222;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark body {
+  background: #1a1a1a;
+  color: #e5e5e5;
 }
 
 .navbar {
@@ -15,6 +21,12 @@ body {
   background: #fff;
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
   width: 100%;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dark .navbar {
+  background: #2d2d2d;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
 .navbar-container {
@@ -57,6 +69,10 @@ body {
   transition: color 0.2s;
 }
 
+.dark .navbar-link {
+  color: #e5e5e5;
+}
+
 .navbar-link:hover {
   color: #2563eb;
 }
@@ -77,6 +93,11 @@ body {
     border-radius: 0 0 8px 8px;
     padding: 1rem 0;
     z-index: 100;
+  }
+  
+  .dark .navbar-links {
+    background: #2d2d2d;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
   }
   .navbar-links.open {
     display: flex;
