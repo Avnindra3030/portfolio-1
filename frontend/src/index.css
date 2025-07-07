@@ -227,7 +227,7 @@ body {
   text-align: center;
 }
 
-.about-education, .about-interests {
+.about-education, .about-interests, .about-experience, .about-certifications {
   margin-bottom: 1.5rem;
 }
 
@@ -238,15 +238,31 @@ body {
   margin-bottom: 0.5rem;
 }
 
-.about-education ul, .about-interests ul {
+.about-education ul, .about-interests ul, .about-experience ul, .about-certifications ul {
   padding-left: 1.2rem;
   color: #222;
   margin: 0;
 }
 
-.about-education li, .about-interests li {
+.about-education li, .about-interests li, .about-certifications li {
   margin-bottom: 0.5rem;
   font-size: 1rem;
+}
+
+.about-experience li {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.about-experience ul ul {
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+}
+
+.about-experience ul ul li {
+  margin-bottom: 0.3rem;
+  font-size: 0.95rem;
+  color: #64748b;
 }
 
 .skills {

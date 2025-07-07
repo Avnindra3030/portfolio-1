@@ -12,19 +12,25 @@ function Skills() {
       { skill: 'ReactJS', percentage: 90, color: '#61dafb' },
       { skill: 'JavaScript', percentage: 85, color: '#f7df1e' },
       { skill: 'HTML', percentage: 95, color: '#e34f26' },
-      { skill: 'CSS', percentage: 88, color: '#1572b6' }
+      { skill: 'CSS', percentage: 88, color: '#1572b6' },
+      { skill: 'Node.js', percentage: 80, color: '#339933' },
+      { skill: 'Express.js', percentage: 75, color: '#000000' },
+      { skill: 'MongoDB', percentage: 75, color: '#47a248' }
     ],
     tools: [
       { skill: 'Git', percentage: 85, color: '#f05032' },
       { skill: 'GitHub', percentage: 90, color: '#181717' },
+      { skill: 'VSCode', percentage: 85, color: '#007acc' },
       { skill: 'PyCharm', percentage: 80, color: '#21d789' }
     ],
-    coursework: [
-      { skill: 'Databases', percentage: 85, color: '#336791' },
+    concepts: [
+      { skill: 'Data Structures & Algorithms', percentage: 85, color: '#ff6b35' },
+      { skill: 'OOP', percentage: 80, color: '#4a90e2' },
+      { skill: 'REST APIs', percentage: 80, color: '#00bcd4' },
+      { skill: 'Agile Methodologies', percentage: 75, color: '#f7931e' },
       { skill: 'Operating Systems', percentage: 80, color: '#ff6b35' },
-      { skill: 'Computer Networks', percentage: 75, color: '#4a90e2' },
-      { skill: 'IoT', percentage: 70, color: '#00bcd4' },
-      { skill: 'Blockchain', percentage: 65, color: '#f7931e' }
+      { skill: 'DBMS', percentage: 85, color: '#336791' },
+      { skill: 'Computer Networks', percentage: 75, color: '#4a90e2' }
     ]
   };
 
@@ -70,9 +76,9 @@ function Skills() {
           ))}
         </div>
 
-        <h3 className="skills-section-title">Coursework & Knowledge</h3>
+        <h3 className="skills-section-title">Concepts & Knowledge</h3>
         <div className="skills-bars-grid">
-          {skillData.coursework.map((skill) => (
+          {skillData.concepts.map((skill) => (
             <SkillBar 
               key={skill.skill}
               skill={skill.skill}
@@ -101,6 +107,9 @@ function Skills() {
             <li>CSS</li>
             <li>JavaScript</li>
             <li>ReactJS</li>
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>MongoDB</li>
           </ul>
         </div>
         <div className="skills-group">
@@ -108,17 +117,20 @@ function Skills() {
           <ul>
             <li>Git</li>
             <li>GitHub</li>
-            <li>Pycharm</li>
+            <li>VSCode</li>
+            <li>PyCharm</li>
           </ul>
         </div>
         <div className="skills-group">
-          <h3 className="skills-subtitle">Coursework</h3>
+          <h3 className="skills-subtitle">Concepts</h3>
           <ul>
+            <li>Data Structures & Algorithms</li>
+            <li>OOP</li>
+            <li>REST APIs</li>
+            <li>Agile Methodologies</li>
             <li>Operating Systems</li>
+            <li>DBMS</li>
             <li>Computer Networks</li>
-            <li>Databases</li>
-            <li>IoT</li>
-            <li>Blockchain Technology</li>
           </ul>
         </div>
       </div>
