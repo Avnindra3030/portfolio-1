@@ -477,3 +477,97 @@
     justify-content: center;
   }
 }
+
+/* Extra Mobile Responsiveness */
+@media (max-width: 480px) {
+  .projects {
+    padding: 1rem 0.25rem;
+  }
+  .projects-title {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  .project-card {
+    padding: 1rem;
+    font-size: 0.95rem;
+  }
+  .project-title {
+    font-size: 1.05rem;
+  }
+  .tech-tag {
+    font-size: 0.7rem;
+    padding: 0.25rem 0.5rem;
+  }
+  .demo-btn {
+    font-size: 0.85rem;
+    padding: 0.6rem 1rem;
+  }
+  .contact-section {
+    padding: 2rem 0.25rem;
+  }
+  .contact-title {
+    font-size: 1.5rem;
+  }
+  .contact-info,
+  .contact-form-container {
+    padding: 1rem;
+    border-radius: 12px;
+  }
+  .contact-method {
+    padding: 0.5rem;
+    gap: 0.5rem;
+  }
+  .contact-icon {
+    width: 32px;
+    height: 32px;
+    font-size: 1rem;
+  }
+  .contact-form-title {
+    font-size: 1.1rem;
+  }
+  .form-input,
+  .form-textarea {
+    font-size: 0.95rem;
+    padding: 0.7rem;
+    border-radius: 8px;
+  }
+  .submit-btn {
+    font-size: 0.95rem;
+    padding: 0.7rem 1.2rem;
+    border-radius: 8px;
+  }
+  .about,
+  .skills,
+  .resume {
+    padding: 1.2rem 0.25rem;
+    border-radius: 10px;
+  }
+  .about-title,
+  .skills-title,
+  .resume-title {
+    font-size: 1.3rem;
+  }
+  .about-bio {
+    font-size: 0.95rem;
+  }
+  .skills-section-title {
+    font-size: 1.05rem;
+  }
+  .skills-group {
+    padding: 1rem 0.5rem;
+    border-radius: 8px;
+  }
+  .resume-btn {
+    font-size: 0.95rem;
+    padding: 0.7rem 1.2rem;
+    border-radius: 8px;
+  }
+  .footer {
+    padding: 1rem 0.25rem;
+    font-size: 0.95rem;
+  }
+  .footer-socials {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
