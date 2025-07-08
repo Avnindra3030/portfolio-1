@@ -10,8 +10,6 @@ function About() {
         <h3 className="about-subtitle">Education</h3>
         <ul>
           <li><strong>B.Tech in Computer Science</strong>, Dronacharya College of Engineering, Gurugram (2022 – 2026)</li>
-          <li><strong>Intermediate (CBSE)</strong>, Jesus & Mary School, Lucknow (2019 – 2021) – 79%</li>
-          <li><strong>High School</strong>, Jesus & Mary School, Lucknow (2018 – 2019) – 80%</li>
         </ul>
       </div>
 
