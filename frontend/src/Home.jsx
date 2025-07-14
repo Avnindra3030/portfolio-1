@@ -19,7 +19,7 @@ function Home() {
           Contact Me
         </a>
         <a
-          href="/Resume-Avnindra-Kumar-Singh.pdf"
+          href="/resume.pdf"
           download
           className="btn btn-outline"
         >
