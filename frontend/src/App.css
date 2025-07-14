@@ -752,41 +752,28 @@
 
 .form-input,
 .form-textarea {
-  background: #f9fafb;
-  color: #222;
-  border: 1.5px solid #e5e7eb;
+  background: #fff !important;
+  color: #222 !important;
+  border: 1.5px solid #e5e7eb !important;
 }
-
 .form-input::placeholder,
 .form-textarea::placeholder {
-  color: #a0aec0;
+  color: #888 !important;
+  font-weight: 500;
   opacity: 1;
 }
-
-.form-input:focus,
-.form-textarea:focus {
-  background: #fff;
-  border-color: #3b82f6;
-  box-shadow: 0 0 0 2px #3b82f633;
-}
-
 @media (prefers-color-scheme: dark) {
   .form-input,
   .form-textarea {
-    background: #23272f;
-    color: #f3f4f6;
-    border: 1.5px solid #312e81;
+    background: #23272f !important;
+    color: #f3f4f6 !important;
+    border: 1.5px solid #312e81 !important;
   }
   .form-input::placeholder,
   .form-textarea::placeholder {
-    color: #b3b8c5;
+    color: #b3b8c5 !important;
+    font-weight: 500;
     opacity: 1;
-  }
-  .form-input:focus,
-  .form-textarea:focus {
-    background: #23272f;
-    border-color: #6366f1;
-    box-shadow: 0 0 0 2px #6366f133;
   }
 }
 
@@ -801,8 +788,8 @@
   justify-content: center;
   gap: 0.5rem;
   padding: 1rem 2rem;
-  background: linear-gradient(90deg, #6366f1 0%, #a78bfa 100%);
-  color: #fff;
+  background: linear-gradient(90deg, #6366f1 0%, #a78bfa 100%) !important;
+  color: #fff !important;
   border: none;
   border-radius: 10px;
   font-size: 1rem;
@@ -811,6 +798,14 @@
   transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
   margin-top: 1rem;
   box-shadow: 0 2px 8px rgba(139, 92, 246, 0.10);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.submit-btn:active {
+  transform: scale(0.98);
+  filter: brightness(0.95);
 }
 
 .submit-btn:hover {
@@ -860,5 +855,105 @@
   }
   .contact-section {
     padding: 2rem 0.2rem;
+  }
+}
+
+/* 1. Glowing Container Cut-Off (Overlapping Issue) */
+@media (max-width: 600px) {
+  .contact-card {
+    box-shadow: 0 2px 8px rgba(59, 130, 246, 0.10), 0 1px 4px rgba(0,0,0,0.04);
+    margin: 0 8px;
+    width: calc(100% - 16px);
+    padding: 1rem 0.5rem;
+  }
+}
+
+/* 2. Mobile Responsiveness: already present, but ensure full width for inputs/buttons */
+@media (max-width: 600px) {
+  .form-input,
+  .form-textarea,
+  .submit-btn {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+/* 3. Text Visibility (Low Contrast for Location) */
+.contact-details .location, .contact-details .contact-location {
+  color: #222 !important;
+  font-weight: 600;
+  opacity: 1;
+}
+@media (prefers-color-scheme: dark) {
+  .contact-details .location, .contact-details .contact-location {
+    color: #f3f4f6 !important;
+  }
+}
+
+/* 4. Input Fields Are Too Dark */
+.form-input,
+.form-textarea {
+  background: #fff !important;
+  color: #222 !important;
+  border: 1.5px solid #e5e7eb !important;
+}
+.form-input::placeholder,
+.form-textarea::placeholder {
+  color: #888 !important;
+  font-weight: 500;
+  opacity: 1;
+}
+@media (prefers-color-scheme: dark) {
+  .form-input,
+  .form-textarea {
+    background: #23272f !important;
+    color: #f3f4f6 !important;
+    border: 1.5px solid #312e81 !important;
+  }
+  .form-input::placeholder,
+  .form-textarea::placeholder {
+    color: #b3b8c5 !important;
+    font-weight: 500;
+    opacity: 1;
+  }
+}
+
+/* 5. Send Message Button Style: already vibrant, but ensure feedback and centering */
+.submit-btn {
+  background: linear-gradient(90deg, #6366f1 0%, #a78bfa 100%) !important;
+  color: #fff !important;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+  margin-top: 1rem;
+  box-shadow: 0 2px 8px rgba(139, 92, 246, 0.10);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.submit-btn:active {
+  transform: scale(0.98);
+  filter: brightness(0.95);
+}
+
+/* 6. Spacing Between Elements */
+.contact-method {
+  margin-bottom: 1rem;
+}
+.contact-method:last-child {
+  margin-bottom: 0;
+}
+
+/* 7. Navigation Bar Overlap: add top padding to contact-section */
+.contact-section {
+  padding-top: 5rem !important;
+}
+@media (max-width: 600px) {
+  .contact-section {
+    padding-top: 3.5rem !important;
   }
 }
